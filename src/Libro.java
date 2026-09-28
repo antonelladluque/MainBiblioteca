@@ -7,7 +7,7 @@
         private double precioReposicion;
         private int prestamosHistoricos = 0;
 
-        // Constructor Canónico
+        
         public Libro(String titulo, String autor, String isbn, int copiasDisponibles, double precioReposicion) {
             if (titulo == null || titulo.isBlank()) {
                 System.out.println("Título inválido, se usó \"Sin título\" por defecto.");
@@ -50,7 +50,7 @@
             this(titulo, autor, isbn, 1, 15000.0);
         }
 
-        // Getters
+        // Getters and setters
         public String getTitulo() { return titulo; }
         public String getAutor() { return autor; }
         public String getIsbn() { return isbn; }
